@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Aleksandra Oparina](https://up.htmlacademy.ru/htmlcss/29/user/1540033).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Сигов](https://htmlacademy.ru/profile/crazer)
 
 ---
 
