@@ -7,34 +7,36 @@
     <link href="normalize.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     </head>
-  <body class="page-body">
+  <body class="page-body hotels-page">
           <header class="main-header">
-            <nav class="main-navigation">
+            <nav class="main-navigation container">
              <ul class="site-navigation">
-              <li> <a href="info.html">Информация</a> </li>
-              <li> <a href="foto-video.html">Фото и видео</a> </li>
-              <li> <a href="map.html">Карта штата</a> </li>
-              <li> <a href="hotels.html">Гостиницы</a> </li>
+              <li><a href="info.html">Информация</a></li>
+              <li><a href="foto-video.html">Фото и видео</a></li>
+              <li><a href="map.html">Карта штата</a></li>
+              <li class="site-navigation current"><a href="hotels.html">Гостиницы</a></li>
             </ul>
             </nav>
-            <div class="header-logo"></div>
-            <a href="index.html"><img src="#" width="138" height="70" alt="Лого"></a>
+            <a class="main-header-logo" href="index.html">
+            <img src="img/index-logo.png" width="138" height="70" alt="Логотип Седоны"/>
+            </a>
           </header>
-<main>
+<main class="page-hotels container">
     <section>
-      <form action="https://echo.htmlacademy.ru/" method="get">
+      <form class="filters" action="https://echo.htmlacademy.ru/" method="POST">
         <ul>
         <li><h3>Инфраструктура:</h3></li>
-        <input type="radio" value="Бассейн">Бассейн
-        <input type="radio" value="Парковка">Парковка
-        <input type="radio" value="Wi-Fi">Wi-Fi
+        <input type="checkbox" value="Бассейн" checked>Бассейн
+        <input type="checkbox" value="Парковка">Парковка
+        <input type="checkbox" value="Wi-Fi">Wi-Fi
         <li><h3>Тип жилья:</h3></li>
-        <input type="radio" value="Гостиница">Гостиница
-        <input type="radio" value="Мотель">Мотель
-        <input type="radio" value="Аппартаменты">Аппартаменты
-        <li><h3>Стоимость в сутки (Р)</h3></li>
-        <input type="number" name="от 0">
-        <input type="number" name="до 3000">
+        <input type="checkbox" value="Гостиница" checked>Гостиница
+        <input type="checkbox" value="Мотель" checked>Мотель
+        <input type="checkbox" value="Аппартаменты" checked>Аппартаменты
+        <li class="cash"><h3>Стоимость в сутки (Р)</h3></li>
+        <input type="number" name="min" placeholder="от 0">
+        <input type="number" name="max" placeholder="до 3000">
+        <input type="range" min="0" max="3000">
         <input type="submit" value="Показать">
       </ul>
       </form>
@@ -49,32 +51,36 @@
         <li>
           <a href="#"> <h4>AMARA RESPOT & SPA</h4></a>
             <p>
-              <img src="#" width="135" height="90" alt="Amara Respot & Spa">
+            <a href="#"><img src="#" width="135" height="90" alt="Amara Respot & Spa"></a>
             </p>
             <span>Гостиница</span>
             <span>от 4000 р.</span>
             <a href="#">Подробнее></a>
             <a href="#">Забронировать></a>
-            <a href="#"> <h4>DESERT QUAIL INN</h4></a>
+            <div class="raiting star-4"></div>
+            <div class="raiting-number">Рейтинг 8,5</div>
+          <a href="#"> <h4>DESERT QUAIL INN</h4></a>
               <p>
-                <img src="#" width="135" height="90" alt=">DESERT QUAIL INN">
+              <a href="#"><img src="#" width="135" height="90" alt=">DESERT QUAIL INN"></a>
               </p>
               <span>Мотель</span>
               <span>от 3000 р.</span>
             <a href="#">Подробнее></a>
             <a href="#">Забронировать></a>
-
-              <a href="#"> <h4>VILLAS POCO DIABLO</h4></a>
+            <div class="raiting star-3"></div>
+            <div class="raiting-number">Рейтинг 8,9</div>
+            <a href="#"> <h4>VILLAS AT POCO DIABLO</h4></a>
                 <p>
-                  <img src="#" width="135" height="90" alt=">VILLAS POCO DIABLO">
+                <a href="#"><img src="#" width="135" height="90" alt=">VILLAS AT POCO DIABLO"></a>
                 </p>
-                <span>Аппартаменты</span>
+            <span>Аппартаменты</span>
             <span>от 2000 р.</span>
               <a href="#">Подробнее</a>
               <a href="#">Забронировать</a>
+              <div class="raiting star-2"></div>
+            <div class="raiting-number">Рейтинг 9,2</div>
         </li>
       </ul>
-
     </section>
 </main>
 <footer class="page-footer main-footer">
@@ -86,16 +92,16 @@
   <section class="footer-social">
  <h2>Седона в социальных сетях</h2>
  <ul>
-   <li>
-     <a class="social-button" href="#">Твиттер</a>
-   </li>
-   <li>
-     <a class="social-button" href="#">Фейсбук</a>
-   </li>
-   <li>
-     <a class="social-button" href="#">Ютуб</a>
-   </li>
- </ul>
+    <li>
+      <a class="social-button-tv" href="#">Твиттер</a>
+    </li>
+    <li>
+      <a class="social-button-fb" href="#">Фейсбук</a>
+    </li>
+    <li>
+      <a class="social-button-youtube" href="#">Ютуб</a>
+    </li>
+</ul>
 </section>
  <p class="footer-copyright">
    Разработано:
