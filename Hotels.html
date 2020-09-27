@@ -1,112 +1,144 @@
 <html class="page" lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Hotels</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans
+
+<head>
+  <meta charset="utf-8">
+  <title>Hotels</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans
     +Narrow:400,700&amp;subset=latin,cyrillic;display=swap">
-    <link href="normalize.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    </head>
-  <body class="page-body hotels-page">
-          <header class="main-header">
-            <nav class="main-navigation container">
-             <ul class="site-navigation">
-              <li><a href="info.html">Информация</a></li>
-              <li><a href="foto-video.html">Фото и видео</a></li>
-              <li><a href="map.html">Карта штата</a></li>
-              <li class="site-navigation current"><a href="hotels.html">Гостиницы</a></li>
-            </ul>
-            </nav>
-            <a class="main-header-logo" href="index.html">
-            <img src="img/index-logo.png" width="138" height="70" alt="Логотип Седоны"/>
-            </a>
-          </header>
-<main class="page-hotels container">
+  <link href="normalize.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="page-body hotels-page">
+  <header class="main-header">
+    <nav class="main-navigation container">
+      <ul class="site-navigation">
+        <li><a href="info.html">Информация</a></li>
+        <li><a href="foto-video.html">Фото и видео</a></li>
+        <li><a href="map.html">Карта штата</a></li>
+        <li class="site-navigation current"><a href="hotels.html">Гостиницы</a></li>
+      </ul>
+    </nav>
+    <a class="main-header-logo" href="index.html">
+      <img src="img/index-logo.png" width="138" height="70" alt="Логотип Седоны" />
+    </a>
+  </header>
+  <main class="page-hotels container">
     <section>
       <form class="filters" action="https://echo.htmlacademy.ru/" method="POST">
-        <ul>
-        <li><h3>Инфраструктура:</h3></li>
-        <input type="checkbox" value="Бассейн" checked>Бассейн
-        <input type="checkbox" value="Парковка">Парковка
-        <input type="checkbox" value="Wi-Fi">Wi-Fi
-        <li><h3>Тип жилья:</h3></li>
-        <input type="checkbox" value="Гостиница" checked>Гостиница
-        <input type="checkbox" value="Мотель" checked>Мотель
-        <input type="checkbox" value="Аппартаменты" checked>Аппартаменты
-        <li class="cash"><h3>Стоимость в сутки (Р)</h3></li>
-        <input type="number" name="min" placeholder="от 0">
-        <input type="number" name="max" placeholder="до 3000">
-        <input type="range" min="0" max="3000">
-        <input type="submit" value="Показать">
-      </ul>
+        <div class="filters-infrastructure">
+          <h3>Инфраструктура:</h3>
+          <input type="checkbox" value="pool" id="pool" checked>
+          <label for="pool">Бассейн</label>
+          <input type="checkbox" value="parking" id="parking">
+          <label for="parking">Парковка</label>
+          <input type="checkbox" value="Wi-Fi" id="wi-fi">
+          <label for="wi-fi">Wi-Fi</label>
+        </div>
+        <div class="filters-home">
+          <h3>Тип жилья:</h3>
+          <input type="checkbox" value="hotels" id="hotels" checked>
+          <label for="hotels">Гостиницы</label>
+          <input type="checkbox" value="motels" id="motels" checked>
+          <label for="motels">Мотель</label>
+          <input type="checkbox" value="appartaments" id="appartaments" checked>
+          <label for="appartaments">Аппартаменты</label>
+        </div>
+        <div class="price">
+          <h3>Стоимость в сутки (Р)</h3>
+          <div>
+            <input type="number" name="price-min" id="price-min" placeholder="от 0">
+            <input type="number" name="price-max" id="price-max" placeholder="до 3000">
+          </div>
+          <div>
+            <input type="range" min="0" max="3000">
+            <input type="submit" value="Показать">
+          </div>
+        </div>
       </form>
     </section>
     <section>
       <h2>Найдено: 3</h2>
-      <span>Сортировка</span>
-      <a href="#">По цене</a>
-      <a href="#">По типу</a>
-      <a href="#">По рейтингу</a>
+      <div class="filters-sorting">
+        <span>Сортировка</span>
+        <a class="sorting-price" href="#">По цене</a>
+        <a class="sorting-type" href="#">По типу</a>
+        <a class="sorting-raiting" href="#">По рейтингу</a>
+      </div>
+      <div class="sorting-up-down">
+        <a class="sorting-up active" href="#"></a>
+        <a class="sorting-down" href="#"></a>
+      </div>
       <ul>
         <li>
-          <a href="#"> <h4>AMARA RESPROT & SPA</h4></a>
-            <p>
+          <a href="#">
+            <h4>AMARA RESPROT & SPA</h4>
+          </a>
+          <p>
             <a href="#"><img src="#" width="135" height="90" alt="Amara Resport & Spa"></a>
-            </p>
-            <span>Гостиница</span>
-            <span>от 4000 р.</span>
-            <a href="#">Подробнее></a>
-            <a href="#">Забронировать></a>
-            <div class="raiting star-4"></div>
-            <div class="raiting-number">Рейтинг 8,5</div>
-          <a href="#"> <h4>DESERT QUAIL INN</h4></a>
-              <p>
-              <a href="#"><img src="#" width="135" height="90" alt=">DESERT QUAIL INN"></a>
-              </p>
-              <span>Мотель</span>
-              <span>от 3000 р.</span>
-            <a href="#">Подробнее></a>
-            <a href="#">Забронировать></a>
-            <div class="raiting star-3"></div>
-            <div class="raiting-number">Рейтинг 8,9</div>
-            <a href="#"> <h4>VILLAS AT POCO DIABLO</h4></a>
-                <p>
-                <a href="#"><img src="#" width="135" height="90" alt=">VILLAS AT POCO DIABLO"></a>
-                </p>
-            <span>Аппартаменты</span>
-            <span>от 2000 р.</span>
-              <a href="#">Подробнее</a>
-              <a href="#">Забронировать</a>
-              <div class="raiting star-2"></div>
-            <div class="raiting-number">Рейтинг 9,2</div>
+          </p>
+          <span>Гостиница</span>
+          <span>от 4000 р.</span>
+          <a href="#">Подробнее></a>
+          <a href="#">Забронировать></a>
+          <div class="raiting star-4"></div>
+          <div class="raiting-number">Рейтинг 8,5</div>
+          <a href="#">
+        </li>
+        <li>
+          <h4>DESERT QUAIL INN</h4>
+          </a>
+          <p>
+            <a href="#"><img src="#" width="135" height="90" alt=">DESERT QUAIL INN"></a>
+          </p>
+          <span>Мотель</span>
+          <span>от 3000 р.</span>
+          <a href="#">Подробнее></a>
+          <a href="#">Забронировать></a>
+          <div class="raiting star-3"></div>
+          <div class="raiting-number">Рейтинг 8,9</div>
+          <a href="#">
+        </li>
+        <li>
+          <h4>VILLAS AT POCO DIABLO</h4>
+          </a>
+          <p>
+            <a href="#"><img src="#" width="135" height="90" alt=">VILLAS AT POCO DIABLO"></a>
+          </p>
+          <span>Аппартаменты</span>
+          <span>от 2000 р.</span>
+          <a href="#">Подробнее</a>
+          <a href="#">Забронировать</a>
+          <div class="raiting star-2"></div>
+          <div class="raiting-number">Рейтинг 9,2</div>
         </li>
       </ul>
     </section>
-</main>
-<footer class="page-footer main-footer">
-  <section class="footer-contacts">
+  </main>
+  <footer class="page-footer main-footer">
+    <section class="footer-contacts">
       <p><a href="#">#visitsedona</a></p>
-      <p>ТЕЛ: <a class="contacts-phone"
-       href="tel: +74956660166">+7(495)666-01-66</a></p>
-  </section>
-  <section class="footer-social">
- <h2>Седона в социальных сетях</h2>
- <ul>
-    <li>
-      <a class="social-button-tv" href="#">Твиттер</a>
-    </li>
-    <li>
-      <a class="social-button-fb" href="#">Фейсбук</a>
-    </li>
-    <li>
-      <a class="social-button-youtube" href="#">Ютуб</a>
-    </li>
-</ul>
-</section>
- <p class="footer-copyright">
-   Разработано:
-   <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
- </p>
-   </footer>
+      <p>ТЕЛ: <a class="contacts-phone" href="tel: +74956660166">+7(495)666-01-66</a></p>
+    </section>
+    <section class="footer-social">
+      <h2>Седона в социальных сетях</h2>
+      <ul>
+        <li>
+          <a class="social-button-tv" href="#">Твиттер</a>
+        </li>
+        <li>
+          <a class="social-button-fb" href="#">Фейсбук</a>
+        </li>
+        <li>
+          <a class="social-button-youtube" href="#">Ютуб</a>
+        </li>
+      </ul>
+    </section>
+    <p class="footer-copyright">
+      Разработано:
+      <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+    </p>
+  </footer>
 </body>
+
 </html>
