@@ -1,0 +1,140 @@
+:root {
+  --basic-white: #FFFFFF;
+  --basic-blue: #81B3D3;
+  --basic-black: #000000;
+  --basic-extra-blue: #81B3D2;
+  --basic-grey: #333333;
+  --basic-extra-grey: #EEEEEE;
+  --basic-brown: #766357;
+  --basic-light-grey: #888888;
+  --special-gray: #ABABAB;
+  --special-blue: #669EC0;
+  --special-extra-blue: #5496BD;
+  --special-brown: #604E43;
+  --special-extra-brown: #503E33;
+}
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 124%;
+  font-weight: 700;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  background-image: url("../img/backgroundphoto.png");
+  text-transform: uppercase;
+  background-position: top center;
+  background-repeat: no-repeat;
+ }
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+  }
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation-current a:not([href]) {
+  background-color: var(--basic-white);
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: var(--basic-white);
+}
+
+.welcome {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.feature-list {
+  list-style: none;
+}
+
+.feature-item {
+  list-style: none;
+  text-align: center;
+  color: var(--basic-white);
+  background-color: var(--basic-white);
+}
+
+.feature-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-white);
+  background-color: var(--basic-extra-blue);
+}
+
+.feature-item h4 {
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.attraction {
+  list-style: none;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+  background-color: var(--basic-extra-grey);
+}
+
+p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-black);
+}
+
+.number {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-white);
+}
+
+.interest h3 {
+  list-style: none;
+  font-size: 30px;
+  line-height: 24px;
+}
+
+.interest p {
+  list-style: none;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+modal {
+  font-size: 14px;
+  line-height: 26px;
+}
+modal h2 {
+  font-size: 21px;
+  line-height: 26px;
+}
