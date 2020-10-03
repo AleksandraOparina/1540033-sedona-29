@@ -24,7 +24,6 @@ body {
   font-weight: 700;
   color: var(--basic-black);
   background-color: var(--basic-white);
-  background-image: url("../img/backgroundphoto.png");
   text-transform: uppercase;
   background-position: top center;
   background-repeat: no-repeat;
@@ -64,6 +63,18 @@ img {
 .user-navigation a:focus {
   background-color: var(--basic-white);
 }
+.filter {
+  background-image: url("../img/background2.png");
+}
+index-columns {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  background-repeat: no-repeat, repeat;
+}
+
+.index-columns h2 {
+  font-size: 21px;
+  line-height: 26px;
 
 .welcome {
   font-size: 14px;
@@ -137,4 +148,54 @@ modal {
 modal h2 {
   font-size: 21px;
   line-height: 26px;
+}
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-extra-blue);
+  border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: var(--special-brown);
+}
+
+.button.disabled,
+.button:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: var(--basic-brown);
+}
+.page-hotels-container {
+font-size: 14px;
+line-height: 21px;
+}
+.filters {
+  list-style: none;
+  background-image: url("../img/background2.png");
+}
+.filters h3 {
+font-size: 16px;
+line-height: 21px;
+}
+.search h2 {
+font-size: 21px;
+line-height: 26px;
+}
+h4 {
+font-size: 21px;
+line-height: 26px;
+}
+.filters-sorting {
+font-size: 12px;
+line-height: 18px;
+}
+.footer-contacts {
+font-size: 21px;
+line-height: 26px;
 }

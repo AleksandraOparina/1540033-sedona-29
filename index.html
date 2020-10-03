@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <title>Sedona</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic;display=swap" rel="stylesheet">
-  <link href="normalize.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+  <link href="../1540033-sedona-29/css/normalize.css" rel="stylesheet">
+  <link href="../1540033-sedona-29/css/style.css" rel="stylesheet">
 </head>
 <body class="page-body">
   <header class="main-header">
@@ -45,6 +45,10 @@
           <p class="number">Седона - не аттракцион для туристов, там течет своя жизнь</p>
           <div> <img src="img/city.png" height="256" width="800" alt="Настоящий городок"></div>
         </li>
+      </ul>
+    </section>
+    <section>
+      <ul>
         <li>
           <h4>Жильё</h4>
           <p>Рекомендуем пожить в настоящем мотеле, все как в кино</p>
@@ -68,7 +72,11 @@
             <p class="number"> Да, по нему можно пройти! Если конечно<br>
               вы осмелитесь</p>
           </li>
-                   <li class="attraction">
+        </ul>
+      </section>
+          <section class="attraction">
+            <ul>
+                   <li>
               <h3>Небольшая площадь</h3>
               <p>- №3 -</p>
               <p>Все достопримечательности находятся очень близко</p>
@@ -131,14 +139,20 @@
             <legend>
               <h2>Поиск гостиницы в Седоне</h2>
             </legend>
-            Дата заезда:
-            <input type="date" name="date" value="24 апреля 2017">
-            Дата выезда:
-            <input type="date" name="date" value="4 июля 2017">
+            <p>
+            <label>Дата заезда:
+            <input type="date" name="date" value="24 апреля 2017" required>
+            </label>
+            </p>
+            <p>
+           <label>Дата выезда:
+            <input type="date" name="date" value="4 июля 2017" required>
+            </label>
+            </p>
             Взрослые:
-            <input type="number" min="1" max="50" value="2">
+            <input type="number" min="1" max="50" value="2" required>
             Дети:
-            <input type="number" min="0" max="50" value="0">
+            <input type="number" min="0" max="50" value="0" required>
             <!--Здесь форма для поиска-->
             <button class="modal-search" type="button"> Найти</button>
           </fieldset>

@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <title>Hotels</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic;display=swap" rel="stylesheet">
-  <link href="normalize.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+  <link href="../1540033-sedona-29/css/normalize.css" rel="stylesheet">
+  <link href="../1540033-sedona-29/css/style.css" rel="stylesheet">
 </head>
 <body class="page-body hotels-page">
   <header class="main-header">
@@ -21,7 +21,7 @@
       <img src="img/logo.png" width="138" height="70" alt="Логотип Седоны" />
     </a>
   </header>
-  <main class="page-hotels container">
+  <main class="page-hotels-container">
     <section>
       <form class="filters" action="https://echo.htmlacademy.ru/" method="POST">
         <div class="filters-infrastructure">
@@ -49,13 +49,13 @@
             <input type="number" name="price-max" id="price-max" placeholder="до 3000">
           </div>
           <div>
-            <input type="range" min="0" max="3000">
+            <input type="range" min="0" max="3000" value="0">
             <input type="submit" value="Показать">
           </div>
         </div>
       </form>
     </section>
-    <section>
+    <section class="search">
       <h2>Найдено: 3</h2>
       <div class="filters-sorting">
         <span>Сортировка</span>
@@ -77,13 +77,13 @@
           </p>
           <span>Гостиница</span>
           <span>от 4000 р.</span>
-          <a href="#">Подробнее></a>
-          <a href="#">Забронировать></a>
+          <a href="#">Подробнее</a>
+          <a href="#">Забронировать</a>
           <div class="raiting star-4"></div>
           <div class="raiting-number">Рейтинг 8,5</div>
-          <a href="#">
         </li>
         <li>
+          <a href="#">
           <h4>DESERT QUAIL INN</h4>
           </a>
           <p>
@@ -91,13 +91,13 @@
           </p>
           <span>Мотель</span>
           <span>от 3000 р.</span>
-          <a href="#">Подробнее></a>
-          <a href="#">Забронировать></a>
+          <a href="#">Подробнее</a>
+          <a href="#">Забронировать</a>
           <div class="raiting star-3"></div>
           <div class="raiting-number">Рейтинг 8,9</div>
-          <a href="#">
-        </li>
+                  </li>
         <li>
+          <a href="#">
           <h4>VILLAS AT POCO DIABLO</h4>
           </a>
           <p>
