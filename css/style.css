@@ -16,7 +16,7 @@
 
 body {
   min-width: 1200px;
-  margin: 0;
+  margin: 40px;
   padding: 0;
   font-family: "PT Sans Narrow", Arial, sans-serif;
   font-size: 21px;
@@ -27,12 +27,12 @@ body {
   text-transform: uppercase;
   background-position: top center;
   background-repeat: no-repeat;
- }
+  list-style: none;
+  }
 
 a {
   text-decoration: none;
 }
-
 img {
   max-width: 100%;
   height: auto;
@@ -42,7 +42,7 @@ img {
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
-  }
+}
 
 .site-navigation {
   list-style: none;
@@ -63,48 +63,31 @@ img {
 .user-navigation a:focus {
   background-color: var(--basic-white);
 }
-.filter {
-  background-image: url("../img/background2.png");
-}
-index-columns {
-  color: var(--basic-black);
-  background-color: var(--basic-white);
-  background-repeat: no-repeat, repeat;
-}
-
-.index-columns h2 {
-  font-size: 21px;
-  line-height: 26px;
 
 .welcome {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
+  text-align: center;
+  left: 40px;
+  top: 780px;
 }
 
 .feature-list {
   list-style: none;
+  text-align: center;
+}
+
+.number {
+  text-align: center;
 }
 
 .feature-item {
+  column-count: 3;
   list-style: none;
   text-align: center;
-  color: var(--basic-white);
-  background-color: var(--basic-white);
-}
-
-.feature-item h3 {
-  font-size: 21px;
+  font-size: 14px;
   line-height: 21px;
-  color: var(--basic-white);
-  background-color: var(--basic-extra-blue);
-}
-
-.feature-item h4 {
-  font-size: 21px;
-  line-height: 21px;
-  color: var(--basic-black);
-  background-color: var(--basic-white);
 }
 
 .attraction {
@@ -113,6 +96,8 @@ index-columns {
   line-height: 21px;
   color: var(--basic-black);
   background-color: var(--basic-extra-grey);
+  column-count: 3;
+  text-align: center;
 }
 
 p {
@@ -141,14 +126,17 @@ p {
   line-height: 24px;
   font-weight: 400;
 }
+
 modal {
   font-size: 14px;
   line-height: 26px;
 }
+
 modal h2 {
   font-size: 21px;
   line-height: 26px;
 }
+
 .button {
   font: inherit;
   text-align: center;
@@ -171,31 +159,44 @@ modal h2 {
   opacity: 0.5;
   background-color: var(--basic-brown);
 }
-.page-hotels-container {
-font-size: 14px;
-line-height: 21px;
+hotels-page {
+  margin: 40px;
 }
+.page-hotels-container {
+  font-size: 16px;
+  line-height: 21px;
+}
+
 .filters {
   list-style: none;
   background-image: url("../img/background2.png");
-}
-.filters h3 {
-font-size: 16px;
+column-count: 3;
+font-size: 14px;
 line-height: 21px;
+
 }
+
+.filters h3 {
+  font-size: 16px;
+  line-height: 21px;
+}
+
 .search h2 {
-font-size: 21px;
-line-height: 26px;
+  font-size: 21px;
+  line-height: 26px;
 }
+
 h4 {
-font-size: 21px;
-line-height: 26px;
+  font-size: 21px;
+  line-height: 26px;
 }
+
 .filters-sorting {
-font-size: 12px;
-line-height: 18px;
+  font-size: 12px;
+  line-height: 18px;
 }
+
 .footer-contacts {
-font-size: 21px;
-line-height: 26px;
+  font-size: 21px;
+  line-height: 26px;
 }
