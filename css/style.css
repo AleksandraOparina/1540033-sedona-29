@@ -28,11 +28,12 @@ body {
   background-position: top center;
   background-repeat: no-repeat;
   list-style: none;
-  }
+}
 
 a {
   text-decoration: none;
 }
+
 img {
   max-width: 100%;
   height: auto;
@@ -127,12 +128,12 @@ p {
   font-weight: 400;
 }
 
-modal {
+.modal {
   font-size: 14px;
   line-height: 26px;
 }
 
-modal h2 {
+.modal h2 {
   font-size: 21px;
   line-height: 26px;
 }
@@ -159,9 +160,11 @@ modal h2 {
   opacity: 0.5;
   background-color: var(--basic-brown);
 }
-hotels-page {
+
+.hotels-page {
   margin: 40px;
 }
+
 .page-hotels-container {
   font-size: 16px;
   line-height: 21px;
@@ -170,10 +173,9 @@ hotels-page {
 .filters {
   list-style: none;
   background-image: url("../img/background2.png");
-column-count: 3;
-font-size: 14px;
-line-height: 21px;
-
+  column-count: 3;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .filters h3 {
