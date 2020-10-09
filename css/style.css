@@ -25,7 +25,7 @@ body {
   color: var(--basic-black);
   background-color: var(--basic-white);
   text-transform: uppercase;
-  background-position: top center;
+  background-position: center top;
   background-repeat: no-repeat;
   list-style: none;
 }
@@ -47,9 +47,10 @@ img {
 
 .site-navigation {
   list-style: none;
+  column-count: 4;
 }
 
-.site-navigation-current a:not([href]) {
+.site-navigation-current {
   background-color: var(--basic-white);
 }
 
@@ -65,13 +66,22 @@ img {
   background-color: var(--basic-white);
 }
 
+.main-header-logo {
+  padding-left: 571px;
+  padding-top: 0px;
+}
+
 .welcome {
-  font-size: 14px;
+  padding-top: 132, 35;
+  font-size: 21px;
   line-height: 26px;
   font-weight: 400;
   text-align: center;
   left: 40px;
-  top: 780px;
+  top: 55px;
+  text-transform: uppercase;
+  background-image: url("../img/backgroundphoto.jpg");
+  background-repeat: no-repeat;
 }
 
 .feature-list {
@@ -162,7 +172,7 @@ p {
 }
 
 .hotels-page {
-  margin: 40px;
+  padding: 40px;
 }
 
 .page-hotels-container {
@@ -173,6 +183,8 @@ p {
 .filters {
   list-style: none;
   background-image: url("../img/background2.png");
+  background-repeat: no-repeat;
+  background-position: 56px 40px;
   column-count: 3;
   font-size: 14px;
   line-height: 21px;
@@ -181,6 +193,7 @@ p {
 .filters h3 {
   font-size: 16px;
   line-height: 21px;
+  padding: 72px;
 }
 
 .search h2 {
@@ -201,4 +214,10 @@ h4 {
 .footer-contacts {
   font-size: 21px;
   line-height: 26px;
+}
+
+.social-button-tv .social-button-fb .social-button-youtube {
+  background-color: var(--basic-extra-blue);
+  height: 48px;
+  width: 46px;
 }
