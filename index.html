@@ -12,7 +12,9 @@
 <body class="page-body">
   <header class="main-header">
     <nav class="main-navigation">
+      <div class="main-navigation-war"></div>
       <ul class="site-navigation">
+
         <li>
           <a href="info.html">Информация</a>
         </li>
@@ -25,22 +27,23 @@
         <li>
           <a href="hotels.html">Гостиницы</a>
         </li>
+
       </ul>
-    </nav>
-    <a class="main-header-logo" href="index.html">
+ </div>
+        <a class="main-header-logo" href="index.html">
       <img src="img/logo.png" width="138" height="70" alt="Логотип Седоны">
     </a>
+    </nav>
   </header>
   <main class="container">
           <h1 hidden="true">Седона</h1>
-
     <section class="welcome">
       <h2 hidden="true">Добро пожаловать в Седону</h2>
       <img src="img/welcome.svg" height="456.65" width="350.88" alt="Добро пожаловать в Седону">
-      <h2>Седона — небольшой городок в Аризоне, <br>заслуживающий большего!</h2>
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-    </section>
-    <section class="features">
+      </section>
+      <div class="small-city"><h2>Седона — небольшой городок в Аризоне, <br>заслуживающий большего!</h2>
+      <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p></div>
+        <section class="features">
       <ul class="feature-list">
         <li>
           <h3>Настоящий городок</h3>
@@ -69,31 +72,31 @@
         </li>
       </ul>
     </section>
-    <section>
-      <ul>
+    <section >
+      <ul class="most">
+        <span class="img"><img src="img/most.png" height="256" width="800" alt="Мост дьявола"></span>
         <li>
           <h3>Там есть <br> мост дьявола</h3>
           <p>- №2 - </p>
           <p> Да, по нему можно пройти! Если конечно<br>
             вы осмелитесь</p>
-          <div><img src="img/most.png" height="256" width="800" alt="Мост дьявола"></div>
-        </li>
-      </ul>
+            </li>
+          </ul>
     </section>
     <section class="attraction">
-      <ul>
+      <ul class="feature-item">
         <li>
-          <h3>Небольшая площадь</h3>
+          <h4>Небольшая площадь</h4>
           <p>- №3 -</p>
           <p>Все достопримечательности находятся очень близко</p>
         </li>
         <li>
-          <h3>Красивая дорога</h3>
+          <h4>Красивая дорога</h4>
           <p>- №4 -</p>
           <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
         <li>
-          <h3>Мало туристов</h3>
+          <h4>Мало туристов</h4>
           <p>- №5 -</p>
           <p>Большинство едет в Гранд Каньон <br>
             и толпится там</p>
@@ -109,7 +112,7 @@
     <div>
       <img src="img/map.jpg" height="594" width="1199" alt="Карта Седоны">
     </div>
-    <section>
+    <section  hidden="true">
       <header>
         <h2>Поиск гостиниц в Седоне</h2>
       </header>
@@ -124,19 +127,19 @@
         <h2>Седона в социальных сетях</h2>
         <ul>
           <li>
-            <a class="social-button-tv" href="#"><img src="img/twit.png" width="16.98" height="15.01" alt="Твиттер">Твиттер</a>
+            <a class="social-button" href="#"><img src="img/tw.svg" width="16.98" height="15.01" alt="Твиттер"></a>
           </li>
           <li>
-            <a class="social-button-fb" href="#"><img src="img/fb.png" width="12" height="22" alt="Фейсбук">Фейсбук</a>
+            <a class="social-button" href="#"><img src="img/fb.svg" width="12" height="22" alt="Фейсбук"></a>
           </li>
           <li>
-            <a class="social-button-youtube" href="#"><img src="img/youtube1.png" width="20" height="16" alt="Ютуб">Ютуб</a>
+            <a class="social-button" href="#"><img src="img/yu.svg" width="20" height="16" alt="Ютуб"></a>
           </li>
         </ul>
       </section>
       <p class="footer-copyright">
-        Разработано:
-        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        Website by:
+        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/academy.svg" width="113,98" height="39,78" alt="HTML Academy"></a>
       </p>
     </footer>
     <section class="modal">
@@ -147,18 +150,18 @@
           </legend>
           <p>
             <label>Дата заезда:
-              <input type="date" name="date" value="24 апреля 2017" required>
+              <input class="date-in" type="date" name="date" value="24 апреля 2017" required>
             </label>
           </p>
           <p>
             <label>Дата выезда:
-              <input type="date" name="date" value="4 июля 2017" required>
+              <input class="date-out" type="date" name="date" value="4 июля 2017" required>
             </label>
           </p>
           Взрослые:
-          <input type="number" min="1" max="50" value="2" required>
+          <input class="man" type="number" min="1" max="50" value="2" required>
           Дети:
-          <input type="number" min="0" max="50" value="0" required>
+          <input class="child" type="number" min="0" max="50" value="0" required>
           <!--Здесь форма для поиска-->
           <button class="modal-search" type="button"> Найти</button>
         </fieldset>

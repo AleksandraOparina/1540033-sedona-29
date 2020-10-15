@@ -26,20 +26,20 @@
       <form class="filters" action="https://echo.htmlacademy.ru/" method="POST">
         <div class="filters-infrastructure">
           <h3>Инфраструктура:</h3>
-          <input type="checkbox" value="pool" id="pool" checked>
+          <input class="filter-checkbox" type="checkbox" value="pool" id="pool" checked>
           <label for="pool">Бассейн</label>
-          <input type="checkbox" value="parking" id="parking">
+          <input class="filter-checkbox" type="checkbox" value="parking" id="parking">
           <label for="parking">Парковка</label>
-          <input type="checkbox" value="Wi-Fi" id="wi-fi">
+          <input class="filter-checkbox" type="checkbox" value="Wi-Fi" id="wi-fi">
           <label for="wi-fi">Wi-Fi</label>
         </div>
         <div class="filters-home">
           <h3>Тип жилья:</h3>
-          <input type="checkbox" value="hotels" id="hotels" checked>
+          <input class="filter-checkbox" type="checkbox" value="hotels" id="hotels" checked>
           <label for="hotels">Гостиницы</label>
-          <input type="checkbox" value="motels" id="motels" checked>
+          <input class="filter-checkbox" type="checkbox" value="motels" id="motels" checked>
           <label for="motels">Мотель</label>
-          <input type="checkbox" value="appartaments" id="appartaments" checked>
+          <input class="filter-checkbox" type="checkbox" value="appartaments" id="appartaments" checked>
           <label for="appartaments">Аппартаменты</label>
         </div>
         <div class="price">
@@ -49,8 +49,8 @@
             <input type="number" name="price-max" id="price-max" placeholder="до 3000">
           </div>
           <div>
-            <input type="range" min="0" max="3000" value="0">
-            <input type="submit" value="Показать">
+            <input class="range" type="range" min="0" max="3000" value="0">
+            <input class="submit" type="submit" value="Показать">
           </div>
         </div>
       </form>
@@ -67,7 +67,7 @@
         <a class="sorting-up active" href="#"></a>
         <a class="sorting-down" href="#"></a>
       </div>
-      <ul>
+      <ul class="list">
         <li>
           <a href="#">
             <h4>AMARA RESPROT & SPA</h4>
@@ -119,19 +119,19 @@
       <p>ТЕЛ: <a class="contacts-phone" href="tel: +74956660166">+7(495)666-01-66</a></p>
     </section>
     <section class="footer-social">
-      <h2>Седона в социальных сетях</h2>
-      <ul>
-        <li>
-            <a class="social-button-tv" href="#"><img src="img/twit.png" width="16.98" height="15.01" alt="Твиттер">Твиттер</a>
+        <h2>Седона в социальных сетях</h2>
+        <ul>
+          <li>
+            <a class="social-button" href="#"><img src="img/tw.svg" width="16.98" height="15.01" alt="Твиттер"></a>
           </li>
           <li>
-            <a class="social-button-fb" href="#"><img src="img/fb.png" width="12" height="22" alt="Фейсбук">Фейсбук</a>
+            <a class="social-button" href="#"><img src="img/fb.svg" width="12" height="22" alt="Фейсбук"></a>
           </li>
           <li>
-            <a class="social-button-youtube" href="#"><img src="img/youtube1.png" width="20" height="16" alt="Ютуб">Ютуб</a>
+            <a class="social-button" href="#"><img src="img/yu.svg" width="20" height="16" alt="Ютуб"></a>
           </li>
-      </ul>
-    </section>
+        </ul>
+      </section>
     <p class="footer-copyright">
       Разработано:
       <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
